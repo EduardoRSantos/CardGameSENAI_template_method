@@ -5,5 +5,7 @@ from creature import Creature
 class TemporaryDamageCardGame(CardGame):
     def hit(self, attacker: Creature, defender: Creature):
         marker =  defender.health - attacker.attack 
-        if(marker <= 0 ):
+        if(marker > 0 ):
+            defender.health = defender.health
+        else:
             defender.health = marker

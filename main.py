@@ -3,12 +3,12 @@ from permanent_damage_card_game import PermanentDamageCardGame
 from temporary_damage_card_game import TemporaryDamageCardGame
 
 # Case permanent_damage_card_game
-creature_elf = Creature("Elf", 2, 2)
+creature_elf = Creature("Elf", 1, 2)
 creature_orc = Creature("Orc", 2, 2)
 
 # Case temporary_damage_card_game
-creature_anao = Creature("Anao", 2, 2)
-creature_bruxo = Creature("Bruxo", 1, 3)
+creature_anao = Creature("Anao", 2,5)
+creature_bruxo = Creature("Bruxo", 2, 3)
 
 
 creatures: list[Creature] = []
